@@ -1,0 +1,89 @@
+*{
+    font-family: 'Playfair Display', serif;
+}
+
+body{
+    font-family: 'Playfair Display', serif;
+}
+
+/* Efeito de rolagem suave */
+html {
+    scroll-behavior: smooth;
+}
+
+.hoverable:hover {
+    color: #0a72ab;
+  }
+
+/* Estilo para a seção principal */
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero h1 {
+    color: #000000;
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    color: #000000;
+    font-size: 20px;
+}
+
+
+/* Estilo para as seções -- Tô testando isso ainda*/
+.section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.section p {
+    font-size: 18px;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.linha {
+    flex-grow: 1;
+    height: 1px;
+    background-color: black;
+  }
+
+.curtido {
+    display: flex;
+    align-items: center; /* Centralizar texto */
+}
+/* Arquivos formatados do Bootstrap */
+
+.navbar.bg-dark {
+    background-color: #000000 !important;
+}
+
+.font-bold {
+    font-weight: bold !important;
+}
+
+.footer.bg-dark {
+    background-color: #000000 !important;
+}
+
+.pt-15 {
+    padding-top: 30rem !important;
+}

@@ -1,0 +1,332 @@
+.container2 {
+    width: 75em;
+    background-color: black;
+    padding: 2em 4.75em;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 2.7em;
+    box-shadow: 0 1em 4em rgba(212, 234, 255, 0.2);
+    margin-top: 3em;
+}
+
+h2 {
+    text-align: left;
+    color: white;
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+input,
+#submit {
+    border: none;
+    outline: none;
+    display: block;
+}
+
+#nome {
+    width: 50%;
+    background-color: white;
+    margin-bottom: 2em;
+    font-size: 20px;
+    padding: 1em 0 0.5em 0.5em;
+    border-radius: 0.7em;
+}
+
+#email {
+    background-color: white;
+    margin-bottom: 2em;
+    width: 40%;
+    font-size: 20px;
+    padding: 1em 0 0.5em 0.5em;
+    border-radius: 0.7em;
+}
+
+#telefone {
+    background-color: white;
+    margin-bottom: 2em;
+    width: 35%;
+    font-size: 20px;
+    padding: 1em 0 0.5em 0.5em;
+    border-radius: 0.7em;
+}
+
+#senha {
+    background-color: white;
+    margin-bottom: 2em;
+    width: 30%;
+    font-size: 20px;
+    padding: 1em 0 0.5em 0.5em;
+    border-radius: 0.7em;
+}
+
+.foto_background {
+    background-color: white;
+    border-radius: 999px;
+    width: 100px;
+    height: 100px;
+}
+
+#foto {
+    border-radius: 90%;
+    width: 26em;
+    height: 24em;
+    position: fixed;
+    margin-top: -27em;
+    margin-left: 38em;
+}
+
+label {
+    display: block;
+    width: 200px;
+    color: white;
+    margin-left: 47em;
+    cursor: pointer;
+}
+
+#input-file {
+    display: none;
+}
+
+#botaoCadastro {
+    position: relative;
+    left: 0;
+    font-size: 1.1em;
+    width: 7em;
+    background-color: #fff;
+    color: black;
+    padding: 0.8em 0;
+    margin-top: 3em;
+    margin-left: 2.5em;
+    border-radius: 0.4em;
+}
+
+#message {
+    margin-left: 25em;
+    font-size: 1em;
+    margin-top: 1.5em;
+    color: rgb(76, 158, 76);
+}
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
+
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    z-index: 99;
+
+}
+
+
+.invader {
+    font-size: 3em;
+    color: #fff;
+    user-select: none;
+
+
+}
+
+.navigation a {
+    position: relative;
+    font-size: 1.1em;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+
+}
+
+.navigation a::after {
+    position: absolute;
+    color: #fff;
+    content: '';
+    left: 0%;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    border-radius: 6px;
+    transform: scaleX(0);
+    transition: cubic-bezier(1);
+    transform-origin: right;
+
+}
+
+
+
+.navigation a:hover::after {
+    transform: scaleX();
+    transform-origin: left;
+}
+
+
+.navigation .btnlogin {
+    width: 130px;
+    height: 40px;
+    border: 2px solid #fff;
+    outline: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #fff;
+    margin-left: 40px;
+    font-weight: 500;
+    transition: 3s;
+    background-color: transparent;
+
+}
+
+body {
+
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-size: cover;
+    background-position: center;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-size: auto;
+    min-height: 100vh;
+
+}
+
+.wapper.loginbox {
+    position: relative;
+    width: 400px;
+    height: 440px;
+    background: transparent;
+    border: 2px solid black;
+    border-radius: 20px;
+    box-shadow: 0 0 30px black;
+    backdrop-filter: blur(20px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.loginbox.login {
+    padding: 40px;
+    width: 100%;
+
+}
+
+.loginbox h2 {
+    font-size: 2em;
+    color: #fff;
+    text-align: center;
+    left: 400;
+
+
+}
+
+.input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid #fff;
+    margin: 5px 0;
+
+}
+
+.input-box label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    font-size: 1em;
+    background-color: transparent;
+    font-weight: 500;
+    pointer-events: none;
+    transform: translateX(-50%);
+    color: #fff;
+
+
+}
+
+.input-box input:focus~label,
+.input-box input:valid~label {
+    top: -5px;
+}
+
+
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: #fff;
+    font-weight: 500;
+
+
+}
+
+.wapper {
+    position: relative;
+    width: 400px;
+    height: 500px;
+    border: 2px solid black;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black
+}
+
+.btn {
+    width: 100%;
+    height: 40px;
+    background: #fff;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1em;
+    color: black;
+    font-weight: 500;
+    margin-top: 30%;
+    margin-left: 8px;
+    align-items: center;
+
+
+}
+
+.login-cadastrar {
+    font-size: 1em;
+    color: #fff;
+    text-align: center;
+    font-weight: 500;
+    margin: 25px 0 10px;
+
+}
+
+.login-cadastrar p a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 2em;
+
+}
+
+.login-cadastrar a:hover {
+    text-decoration: line-through;
+}
+
+.cadastre-link {
+    font-size: 20px;
+    color: #fff;
+}

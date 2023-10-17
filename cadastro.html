@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Invader - Cadastro</title>
+  <link rel="stylesheet" type="text/css" href="css/cadastro.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="icon" href="img/logo.ico">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i&display=swap">
+
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-xl bg-body-tertiary bg-dark border-bottom border-bottom-dark" data-bs-theme="dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Invader</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="about.html"><span class="hoverable">Sobre Nós</span></a>
+            </li>
+          </ul>
+        </div>
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="top-topics.html"><span class="hoverable">Top Assuntos</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="login.html"><span class="hoverable">Login</span></a>
+          </li>
+        </ul>
+      </div>
+      </div>
+    </nav>
+  </header>
+
+  <main style="margin-bottom: 200px;">
+    <section class="container bg-dark text-white" style="border-radius: 50px; margin-top: 30px; margin-bottom: 30px;">
+      <div style="margin-left: 60px;">
+        <h2>
+          <br>
+          Não possui conta?<br>
+          Colabore com a gente!
+        </h2>
+        <input type="text" placeholder="Nome Completo" id="nome" required>
+
+        <input type="email" placeholder="Email" id="email" required>
+
+        <input type="tel" placeholder="Telefone (opcional)" id="telefone">
+
+        <input type="password" placeholder="Senha" id="senha" required>
+
+        <img src="img/user icon.png" id="foto">
+        <label for="input-file" class="titulo_texto">(Foto de perfil opcional)</label>
+        <input type="file" accept="image/jpeg, image/png, image/jpg, image/jfif" id="input-file">
+      </div>
+      
+      <button type="submit" id="botaoCadastro">Cadastrar</button>
+      <p id="message">Cadastrado(a) com sucesso!</p>
+    </section>
+  </main>
+
+  <footer class="footer border bg-dark text-white text-center">
+    <p class="py-1 fs-6">&copy; 2023 Project Invader. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="js/java2.js"></script>
+  <script src="js/register.js"></script>
+</body>
+
+</html>
